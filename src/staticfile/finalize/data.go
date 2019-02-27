@@ -110,6 +110,7 @@ http {
       {{end}}
 
         index index.html index.htm Default.htm;
+        try_files $uri $uri/ /index.html;
 
       {{if .DirectoryIndex}}
         autoindex on;
